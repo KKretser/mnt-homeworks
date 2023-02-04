@@ -1,9 +1,17 @@
 ---
   el:
     hosts:
-      centos7:
-        ansible_connection: docker
+      centos8:      
+        ansible_host: 192.168.2.53
+        ansible_connection: ssh
+
   deb:
     hosts:
       ubuntu:
-        ansible_connection: docker
+        ansible_host: 192.168.2.125      
+        ansible_connection: ssh
+
+  local:
+    hosts:
+      local_host:
+        ansible_connection: local
