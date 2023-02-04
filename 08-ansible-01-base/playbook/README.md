@@ -13,5 +13,10 @@ ansible-vault view  group_vars/deb/examp.yml --ask-vault-password
 6. Как выглядит команда запуска `playbook`, если переменные зашифрованы?
 ansible-playbook site.yml -i inventory/prod.yml --ask-vault-password
 7. Как называется модуль подключения к host на windows?
+ANSIBLE.BUILTIN.WINRM    (/usr/lib/python3/dist-packages/ansible/plugins/connection/winrm.py)
 8. Приведите полный текст команды для поиска информации в документации ansible для модуля подключений ssh
+ansible-doc -t connection ssh
 9. Какой параметр из модуля подключения `ssh` необходим для того, чтобы определить пользователя, под которым необходимо совершать подключение?
+- remote_user
+        User name with which to login to the remote server, normally set by the remote_user keyword.
+
